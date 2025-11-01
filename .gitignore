@@ -1,0 +1,19 @@
+# Node/JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hardhat artifacts & cache
+packages/**/artifacts/
+packages/**/cache/
+packages/**/coverage/
+packages/**/coverage.json
+
+# Next.js
+packages/nextjs/.next/
+packages/nextjs/out/
+
+# Env
+.env
+.env.*
