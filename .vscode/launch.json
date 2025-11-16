@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Hardhat Node",
+            "cwd": "${workspaceFolder}/packages/hardhat",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "node"
+            ],
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

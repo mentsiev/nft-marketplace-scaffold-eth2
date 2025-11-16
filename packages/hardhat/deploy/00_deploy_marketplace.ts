@@ -2,18 +2,12 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-  const { deployments, getNamedAccounts } = hre;
-  const { deploy, log } = deployments;
-  const { deployer } = await getNamedAccounts();
-
-  await deploy("NFTMarketplace", {
+  const { deployer } = await hre.getNamedAccounts();
+  await hre.deployments.deploy("NFTMarketplace", {
     from: deployer,
     args: [],
     log: true,
-    autoMine: true,
   });
-
-  log("NFTMarketplace deployed");
 };
 
 export default func;

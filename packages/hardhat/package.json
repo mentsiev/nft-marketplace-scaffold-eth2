@@ -1,0 +1,20 @@
+{
+  "name": "nft-marketplace-hardhat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:localhost": "hardhat deploy --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "6.1.0",
+    "hardhat": "2.26.0",
+    "hardhat-deploy": "0.12.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.0.2"
+  }
+}
